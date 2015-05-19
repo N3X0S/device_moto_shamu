@@ -18,7 +18,7 @@
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
 # Get the long list of APNs
-PRODUCT_COPY_FILES := vendor/outqast/prebuilts/common/system/etc/apns-conf.xml:system/etc/apns-conf.xml
+PRODUCT_COPY_FILES := vendor/n3x0s/prebuilts/common/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # F2FS 
 PRODUCT_COPY_FILES := device/moto/shamu/format-system.sh:system/bin/format-system.sh
@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES := device/moto/shamu/format-system.sh:system/bin/format-syste
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Iherit common product files.
-$(call inherit-product, vendor/outqast/products/common.mk)
+$(call inherit-product, vendor/n3x0s/products/common.mk)
 
 PRODUCT_NAME := aosp_shamu
 PRODUCT_DEVICE := shamu
